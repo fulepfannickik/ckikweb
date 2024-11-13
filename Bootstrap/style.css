@@ -1,0 +1,19 @@
+.container {
+    background-color: lightpink;
+    padding: 3px;
+}
+
+.row {
+    border: 1px, solid, black;
+}
+
+
+body {
+    background-image: url(images.png);
+}
+
+.col {
+    border: 1px, dotted, blue;
+    margin: 3px;
+
+}
