@@ -1,0 +1,46 @@
+body {
+    background-image: url(jokep.jpg);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+    
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    background-color: pink;
+    opacity: 80%;
+    box-shadow:2px 2px 2px 2px hotpink;
+    border-radius: 15px;
+}
+
+fieldset {
+    box-shadow: inset 5px 5px 8px hotpink;
+    border-radius: 15px;
+}
+
+legend {
+    font-style: italic
+}
+
+.felso {
+    font-style: italic;
+    text-decoration: underline;
+    color: hotpink;
+}
+
+#csuszka {
+    width: 60%;
+    text-align: center;
+}
+
+#formstyle {
+    background-color: pink;
+}
+
+h1 {
+    text-shadow: 2px 3px 5px  rgb(189, 61, 167);
+}
+

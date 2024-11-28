@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urlap</title>
+</head>
+<body>
+    <h1>Urlap hasznalat</h1>
+    <form id="formstyle" >
+        <fieldset>
+            <legend class="felso"><b>Szemelyes adatok</b></legend>
+        <p>
+            <label>Nev</label>
+            <input type="text" placeholder="peldaszoveg">
+        </p>
+        <p>
+            <label >Email: </label>
+            <input type="text" placeholder="valami@valami.v">
+        </p>
+        <p>
+            <label class="felso" >Szuletesi ev</label>
+            <input type="number" value="2000" min="1904" max="2024">
+        </p>
+    </fieldset>
+    <fieldset>
+        <p>
+            <label class="felso">Iskolazottsag</label>
+            <p>
+                <input type="radio" name="vegzettseg">
+                <label>8 altalanos</label>
+                <br>
+                <input type="radio" name="vegzettseg">
+                <label>Erettsegi</label>
+                <br>
+                <input type="radio" name="vegzettseg">
+                <label>Egyetem</label>
+                <br>
+            </p>
+            <label class="felso">Nem</label>
+            <p>
+                <input type="radio" name="nem" >
+                <label>Nő</label>
+                <br>
+                <input type="radio" name="nem">
+                <label>Férfi</label>
+                <br>
+        
+            </p>
+        </p>
+        <p>
+            
+            <label class="felso">Kedvenc szine(i)</label>
+            <p>
+                <input type="checkbox" value="pink">
+                <label>pink</label>
+                <br>
+                <input type="checkbox" value="rosa">
+                <label>rosa</label>
+                <br>
+                <input type="checkbox" value="rozsaszin">
+                <label>rozsaszin</label>
+                <br>
+            </p>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Valasszon mindegyikbol egyet</legend>
+        <label class="felso">Kedvenc automarka</label>
+        <p>
+        <select size="3">
+            <option value="Suzuki">Suzuki</option>
+            <option value="BMW">BMW</option>
+            <option value="Ford">Ford</option>
+            <option value="Audi">Audi</option>
+        </select>
+        </p>
+        
+        <label class="felso">Kedvenc zenei stilus</label>
+        <p>
+        <input list="Music style">
+        <datalist id="Music">
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Classic">Classic</option>
+            <option value="Metal">metal</option>
+        </datalist>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Tovabbi Velemenyek</legend>
+        <textarea name="" id="" rows="8" cols="50">Ide varjuk a valaszat</textarea>
+    </fieldset>
+    <fieldset>
+        <label>Értékeles</label>
+        <label>Szazalekos ertekeles</label>
+        <br>
+        <input id="csuszka" type="range" min="0" max="100"  onchange="Ertekkiirat()">
+        <p id="csuszkaerteke" onchange="Ertekkiirat()"> 
+            <script>
+                function Ertekkiirat()
+                {
+                document.getElementById("csuszkaerteke").innerHTML = document.getElementById("csuszka").value
+                }
+            </script>
+        </p>
+    </fieldset>
+    <input type="button" value="oki" disabled style="margin-top:50px">
+    <input type="submit">
+    <button>szia</button>
+    <input type="reset" value="adatok torlese">
+    </form>
+</body>
+</html>
+
+
